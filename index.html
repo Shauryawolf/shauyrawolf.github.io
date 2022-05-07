@@ -42,7 +42,7 @@
             <button class="btn btn-sm">Search</button>
         </div>
 
-        <div class="burger">
+        <div class="burger" onclick="nav()">
             <div class="line"></div>
             
             <div class="line"></div>
@@ -138,7 +138,21 @@
             alert("Already on the page")
         }
     </script>
-    <script src="/main.js"></script>
+    <script src="main.js"></script>
+    <script>
+
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navList = document.querySelector('.nav-list')
+        rightNav = document.querySelector('.rightNav')
+
+
+        function nav(){
+            rightNav.classList.toggle('v-class-resp')
+            navList.classList.toggle('v-class-resp')
+            navbar.classList.toggle('h-nav-resp')
+        }
+    </script>
 </body>
 
 </html>
