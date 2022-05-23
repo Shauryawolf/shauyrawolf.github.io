@@ -5,11 +5,13 @@
     .navbar{
         flex-direction: column;
         height: 447px;
+        transition: 0.3s ease-out;
+
     }
 
     .rightNav{
         text-align: center;
-        transition: 0.3s ease-out;
+        /* transition: 0.3s ease-out; */
 
     }
 
