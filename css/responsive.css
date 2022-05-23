@@ -49,4 +49,7 @@
     .text-small{
         text-align: center;
     }
+    .btn{
+        margin: 7px 31px;
+    }
 }
