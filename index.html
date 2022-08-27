@@ -164,6 +164,13 @@ l.parentNode.insertBefore(s, l);
 </script>
   <script>
     function onSuccess(googleUser) {
+        document.getElementById(id).style.display = "block";
+        var profile = auth2.currentUser.get().getBasicProfile();
+        name = profile.getGivenName();
+        console.log(name)
+
+
+    
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
     }
     function onFailure(error) {
