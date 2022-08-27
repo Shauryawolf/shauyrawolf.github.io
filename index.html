@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta name="hilltopads-site-verification" content="64e89cbc272ee250f51ce227533b7c248a7493f6" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +42,10 @@
             <li> <a href="policies.html"> Policies</a></li>
             <li> <a href="services.html"> Services</a></li>
             <li> <a href="contact.html"> Contact Us</a></li>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <!-- <div data-onsuccess="onSignIn"></div> -->
+            <!-- <span style="color: ;" class="material-symbols-outlined"> -->
+                </span>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
         </ul>
         <div class="rightNav v-class-resp">
@@ -154,17 +158,31 @@ var d = document,
     s = d.createElement('script'),
     l = d.scripts[d.scripts.length - 1];
 s.settings = qud || {};
-s.src = "\/\/concernedcommon.com\/b.XlVOsqdGGRl\/0gY_WVcM\/ReWmH9AuaZYUFlMk-PuTJQg1OMejjA_w\/OoTRIDtqN\/DvUfywMDDlAC5CMAwT";
+// s.src = "\/\/concernedcommon.com\/b.XlVOsqdGGRl\/0gY_WVcM\/ReWmH9AuaZYUFlMk-PuTJQg1OMejjA_w\/OoTRIDtqN\/DvUfywMDDlAC5CMAwT";
 l.parentNode.insertBefore(s, l);
 })({})
 </script>
-function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log('Name: ' + profile.getName());
-    console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  }
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 
 </html>
