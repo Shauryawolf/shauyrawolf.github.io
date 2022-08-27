@@ -37,7 +37,6 @@
             <li> <a href="policies.html"> Policies</a></li>
             <li> <a href="services.html"> Services</a></li>
             <li> <a href="contact.html"> Contact</a></li>
-            <div class="g_id_signin " id="id" data-type="standard"></div>
 
         </ul>
         <div class="rightNav v-class-resp">
@@ -57,7 +56,7 @@
                 <p class="text-big" id>The best Minecraft server is here</p>
                 <p class="text-small">In this minecraft the best server is hypixel but it is of uk so we need our asian
                     server so here it is</p>
-                <button class="btn" onclick="location.href='https://discord.com/invite/FVSGPsTS5f';">Join Us</button>
+                <button class="btn" href="https://discord.com/invite/FVSGPsTS5f" >Join Us</button>
 
 
 
@@ -141,23 +140,7 @@
             navList.classList.toggle('v-class-resp')
             navbar.classList.toggle('h-nav-resp')
         }
-        
-        console.log(a)
-        if (auth2.isSignedIn.get()) {
-            document.getElementsByClassName('g_id_signin ').style.display = block;
-            document.getElementsByClassName(g_id_signin ).style.display = block;
-            
-
-            
-            var profile = auth2.currentUser.get().getBasicProfile();
-            console.log('ID: ' + profile.getId());
-            console.log('Full Name: ' + profile.getName());
-            console.log('Given Name: ' + profile.getGivenName());
-            console.log('Family Name: ' + profile.getFamilyName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail());
-}
-    </script>
+        </script>
     
 </body>
 
