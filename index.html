@@ -20,7 +20,7 @@
 
         gtag('config', 'G-Q9MNVCVGTV');
     </script>
-    <meta name="google-signin-client_id" content=".apps.googleusercontent.com">
+    <!-- <meta name="google-signin-client_id" content=".apps.googleusercontent.com"> -->
 </head>
 
 <body>
@@ -37,8 +37,7 @@
             <li> <a href="policies.html"> Policies</a></li>
             <li> <a href="services.html"> Services</a></li>
             <li> <a href="contact.html"> Contact</a></li>
-                <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
-                <div class="g_id_signin " id="id" data-type="standard"></div>
+            <div class="g_id_signin " id="id" data-type="standard"></div>
 
         </ul>
         <div class="rightNav v-class-resp">
@@ -142,9 +141,14 @@
             navList.classList.toggle('v-class-resp')
             navbar.classList.toggle('h-nav-resp')
         }
+        
+        console.log(a)
         if (auth2.isSignedIn.get()) {
-            signin = document.querySelector('.g_id_signin ')
-            signin.classList.toggle('g_id_signin ')
+            document.getElementsByClassName('g_id_signin ').style.display = block;
+            document.getElementsByClassName(g_id_signin ).style.display = block;
+            
+
+            
             var profile = auth2.currentUser.get().getBasicProfile();
             console.log('ID: ' + profile.getId());
             console.log('Full Name: ' + profile.getName());
