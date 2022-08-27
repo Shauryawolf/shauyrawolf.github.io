@@ -4,17 +4,14 @@
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
-    <meta name="hilltopads-site-verification" content="64e89cbc272ee250f51ce227533b7c248a7493f6" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <title>Raw Network - The Best Server</title>
     <link rel="shortcut icon" href="/img/favicon.ico" />
-    <!-- <script src="https://cmp.osano.com/Azz829SySiwUqK6/7f3f1de7-f558-46d7-9eb2-2bd34e5504cb/osano.js"></script> -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379025578335078"
         crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9MNVCVGTV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,34 +20,28 @@
 
         gtag('config', 'G-Q9MNVCVGTV');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379025578335078"
-        crossorigin="anonymous"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379025578335078"
-        crossorigin="anonymous"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379025578335078"
-        crossorigin="anonymous"></script>
-    <!-- <meta name="google-signin-scope" content="shauryameena5@gmail.com"> -->
-    <meta name="google-signin-client_id" content="72145629413-gaq200poe6gfpuaeef43l15s9fm94bj0.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content=".apps.googleusercontent.com">
 </head>
 
 <body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="72145629413-gaq200poe6gfpuaeef43l15s9fm94bj0"
+         data-callback="handleCredentialResponse">
+    </div>
+    
     <nav class="navbar background h-nav-resp">
         <ul class="nav-list v-class-resp">
             <div class="logo"><img src="/img/logo.jpg" alt="logo"></div>
             <li> <a href="" onclick="drop()"> Home</a></li>
             <li> <a href="policies.html"> Policies</a></li>
             <li> <a href="services.html"> Services</a></li>
-            <li> <a href="contact.html"> Contact Us</a></li>
-            <!-- <div data-onsuccess="onSignIn"></div> -->
-            <!-- <span style="color: ;" class="material-symbols-outlined"> -->
-                </span>
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <li> <a href="contact.html"> Contact</a></li>
+                <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+                <div class="g_id_signin " data-type="standard"></div>
 
         </ul>
         <div class="rightNav v-class-resp">
-            <!-- <input type="search" name="search" id="search">
-            <button class="btn btn-sm">Search</button> -->
         </div>
 
         <div class="burger" onclick="nav()">
@@ -152,44 +143,6 @@
             navbar.classList.toggle('h-nav-resp')
         }
     </script>
-<script>
-(function(qud){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = qud || {};
-// s.src = "\/\/concernedcommon.com\/b.XlVOsqdGGRl\/0gY_WVcM\/ReWmH9AuaZYUFlMk-PuTJQg1OMejjA_w\/OoTRIDtqN\/DvUfywMDDlAC5CMAwT";
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-  <script>
-    function onSuccess(googleUser) {
-        document.getElementById(id).style.display = "block";
-        var profile = auth2.currentUser.get().getBasicProfile();
-        name = profile.getGivenName();
-        console.log(name)
-
-
-    
-      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-    }
-    function onFailure(error) {
-      console.log(error);
-    }
-    function renderButton() {
-      gapi.signin2.render('my-signin2', {
-        'scope': 'profile email',
-        'width': 240,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
-      });
-    }
-  </script>
-
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 
 </html>
