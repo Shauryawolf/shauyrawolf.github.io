@@ -143,7 +143,8 @@
             navbar.classList.toggle('h-nav-resp')
         }
         if (auth2.isSignedIn.get()) {
-            document.getElementById(id).style.display = block;
+            signin = document.querySelector('.g_id_signin ')
+            signin.classList.toggle('g_id_signin ')
             var profile = auth2.currentUser.get().getBasicProfile();
             console.log('ID: ' + profile.getId());
             console.log('Full Name: ' + profile.getName());
